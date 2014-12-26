@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Нашим героям</title>
+
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin,cyrillic" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/jquery.jscrollpane.css" />
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" href="css/styles-ie8.css" />
+        <![endif]-->
+
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/jquery.mousewheel.js"></script>
+        <script src="js/jquery.jscrollpane.min.js"></script>
+        <script src="js/tools.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <!-- side -->
+                <div class="side">
+                    <ul>
+                        <li>
+                            <a href="#" class="side-avatar"><img src="files/side-avatar.jpg" alt="" width="64" height="64" /></a>
+                        </li>
+                        <li>
+                            <a href="#" class="side-item">
+                                <div class="side-item-icon"><img src="images/side-item-1.png" alt="" width="25" height="33" /><div>25</div></div>
+                                <div class="side-item-name">Заявки</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="side-item">
+                                <div class="side-item-icon"><img src="images/side-item-2.png" alt="" width="28" height="32" /></div>
+                                <div class="side-item-name">Участники</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="side-item">
+                                <div class="side-item-icon"><img src="images/side-item-3.png" alt="" width="31" height="21" /><div>150</div></div>
+                                <div class="side-item-name">Сообщения</div>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#" class="side-item">
+                                <div class="side-item-icon"><img src="images/side-item-4.png" alt="" width="25" height="33" /><div>3</div></div>
+                                <div class="side-item-name">ЗАявки на&nbsp;изменениe профиля</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- side END -->
+
+                <!-- container -->
+                <div class="container">
+                    <div class="content">
+
+                        <header>
+                            <div class="header-title">Заявки на изменение </div>
+
+                            <div class="search">
+                                <form action="#" method="post">
+                                    <div class="search-input"><span>поиск</span><input type="text" name="search" value="" /></div>
+                                    <div class="search-submit"><input type="submit" value="" /></div>
+                                </form>
+                            </div>
+
+                            <div class="header-filter">
+                                <ul>
+                                    <li class="active"><a href="#">Все</a></li>
+                                    <li><a href="#">Новые</a></li>
+                                </ul>
+                            </div>
+                        </header>
+
+                        <!-- item wrap -->
+                        <div class="item-wrap">
+                            <!-- item others -->
+                            <div class="item-others">
+                                <a href="#" class="item-others-prev">
+                                    <div class="item-others-name"></div>
+                                    <div class="item-others-genre"></div>
+                                </a>
+                                <a href="#" class="item-others-next">
+                                    <div class="item-others-name"></div>
+                                    <div class="item-others-genre"></div>
+                                </a>
+                            </div>
+                            <!-- item others END -->
+
+                            <!-- item -->
+                            <div class="item">
+                            </div>
+                            <!-- item END -->
+
+                            <div class="loading">
+                                <div class="loading-bg"></div>
+                                <div class="loading-inner">
+                                    <div class="loading-img"></div>
+                                    <div class="loading-text">Загрузка данных</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item wrap END -->
+
+                        <!-- list -->
+                        <div class="list">
+                            <div class="list-headers">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Исполнитель, город</th>
+                                            <th class="center">Регистрация</th>
+                                            <th class="center">Электронная почта</th>
+                                            <th class="center">Телефон</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+
+                            <div class="list-content list-content-items">
+                                <div class="list-content-inner">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="list-content-name">
+                                                    <a href="load/member-edit.html" rel="Поп" class="list-content-name-inner">
+                                                        <div class="list-content-avatar"><img src="images/list-content-avatar-1.png" alt="" width="34" height="34" /></div>
+                                                        <div class="list-content-name-content">
+                                                            <div class="list-content-name-text-1">Эдуард Лабковский</div>
+                                                            <div class="list-content-name-text-2">Россия, Новороссийск</div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="list-content-center">17.11.2014</td>
+                                                <td class="list-content-center">umkls@rambler.ru</td>
+                                                <td class="list-content-center">903 264 77 51</td>
+                                                <td class="list-content-center">
+                                                    <a href="#" class="list-content-status"></a>
+                                                    <a href="#" class="list-content-play"></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="list-content-name">
+                                                    <a href="load/member-edit-2.html" rel="Хард-Рок" class="list-content-name-inner">
+                                                        <div class="list-content-avatar"><img src="files/avatar-1.jpg" alt="" width="34" height="34" /></div>
+                                                        <div class="list-content-name-content">
+                                                            <div class="list-content-name-text-1">Развесёлая новгородская кадриль</div>
+                                                            <div class="list-content-name-text-2">Россия, Москва</div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="list-content-center">15.11.2014</td>
+                                                <td class="list-content-center">diazdinov@mail.ru</td>
+                                                <td class="list-content-center">89163356811</td>
+                                                <td class="list-content-center">
+                                                    <a href="#" class="list-content-status"></a>
+                                                    <a href="#" class="list-content-play"></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="onread">
+                                                <td class="list-content-name">
+                                                    <a href="load/member-edit.html" rel="Поп" class="list-content-name-inner">
+                                                        <div class="list-content-avatar"><img src="files/avatar-2.jpg" alt="" width="34" height="34" /></div>
+                                                        <div class="list-content-name-content">
+                                                            <div class="list-content-name-text-1">Эдуард Лабковский</div>
+                                                            <div class="list-content-name-text-2">Россия, Новороссийск</div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="list-content-center">14.11.2014</td>
+                                                <td class="list-content-center">umkls@rambler.ru</td>
+                                                <td class="list-content-center">903 264 77 51</td>
+                                                <td class="list-content-center">
+                                                    <a href="#" class="list-content-status"></a>
+                                                    <a href="#" class="list-content-play"></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="onread">
+                                                <td class="list-content-name">
+                                                    <a href="load/member-edit-3.html" rel="Хард-Рок" class="list-content-name-inner">
+                                                        <div class="list-content-avatar"><img src="files/avatar-3.jpg" alt="" width="34" height="34" /></div>
+                                                        <div class="list-content-name-content">
+                                                            <div class="list-content-name-text-1">Кукушечка</div>
+                                                            <div class="list-content-name-text-2">Россия, Москва</div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="list-content-center">13.11.2014</td>
+                                                <td class="list-content-center">diazdinov@mail.ru</td>
+                                                <td class="list-content-center">89163356811</td>
+                                                <td class="list-content-center">
+                                                    <a href="#" class="list-content-status"></a>
+                                                    <a href="#" class="list-content-play"></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="onread">
+                                                <td class="list-content-name">
+                                                    <a href="load/member-edit.html" rel="Поп" class="list-content-name-inner">
+                                                        <div class="list-content-avatar"><img src="files/avatar-4.jpg" alt="" width="34" height="34" /></div>
+                                                        <div class="list-content-name-content">
+                                                            <div class="list-content-name-text-1">Эдуард Лабковский</div>
+                                                            <div class="list-content-name-text-2">Россия, Новороссийск</div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="list-content-center">12.11.2014</td>
+                                                <td class="list-content-center">umkls@rambler.ru</td>
+                                                <td class="list-content-center">903 264 77 51</td>
+                                                <td class="list-content-center">
+                                                    <a href="#" class="list-content-status"></a>
+                                                    <a href="#" class="list-content-play"></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="onread">
+                                                <td class="list-content-name">
+                                                    <a href="load/member-edit.html" rel="Поп" class="list-content-name-inner">
+                                                        <div class="list-content-avatar"><img src="images/list-content-avatar-3.png" alt="" width="34" height="34" /></div>
+                                                        <div class="list-content-name-content">
+                                                            <div class="list-content-name-text-1">Эдуард Лабковский</div>
+                                                            <div class="list-content-name-text-2">Россия, Новороссийск</div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="list-content-center">17.11.2014</td>
+                                                <td class="list-content-center">umkls@rambler.ru</td>
+                                                <td class="list-content-center">903 264 77 51</td>
+                                                <td class="list-content-center">
+                                                    <a href="#" class="list-content-status"></a>
+                                                    <a href="#" class="list-content-play"></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="list-content-name">
+                                                    <a href="load/member-edit-2.html" rel="Хард-Рок" class="list-content-name-inner">
+                                                        <div class="list-content-avatar"><img src="files/avatar-1.jpg" alt="" width="34" height="34" /></div>
+                                                        <div class="list-content-name-content">
+                                                            <div class="list-content-name-text-1">Развесёлая новгородская кадриль</div>
+                                                            <div class="list-content-name-text-2">Россия, Москва</div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="list-content-center">15.11.2014</td>
+                                                <td class="list-content-center">diazdinov@mail.ru</td>
+                                                <td class="list-content-center">89163356811</td>
+                                                <td class="list-content-center">
+                                                    <a href="#" class="list-content-status"></a>
+                                                    <a href="#" class="list-content-play"></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="onread">
+                                                <td class="list-content-name">
+                                                    <a href="load/member-edit.html" rel="Поп" class="list-content-name-inner">
+                                                        <div class="list-content-avatar"><img src="files/avatar-2.jpg" alt="" width="34" height="34" /></div>
+                                                        <div class="list-content-name-content">
+                                                            <div class="list-content-name-text-1">Эдуард Лабковский</div>
+                                                            <div class="list-content-name-text-2">Россия, Новороссийск</div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="list-content-center">14.11.2014</td>
+                                                <td class="list-content-center">umkls@rambler.ru</td>
+                                                <td class="list-content-center">903 264 77 51</td>
+                                                <td class="list-content-center">
+                                                    <a href="#" class="list-content-status"></a>
+                                                    <a href="#" class="list-content-play"></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="unread">
+                                                <td class="list-content-name">
+                                                    <a href="load/member-edit-3.html" rel="Хард-Рок" class="list-content-name-inner">
+                                                        <div class="list-content-avatar"><img src="files/avatar-3.jpg" alt="" width="34" height="34" /></div>
+                                                        <div class="list-content-name-content">
+                                                            <div class="list-content-name-text-1">Кукушечка</div>
+                                                            <div class="list-content-name-text-2">Россия, Москва</div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="list-content-center">13.11.2014</td>
+                                                <td class="list-content-center">diazdinov@mail.ru</td>
+                                                <td class="list-content-center">89163356811</td>
+                                                <td class="list-content-center">
+                                                    <a href="#" class="list-content-status"></a>
+                                                    <a href="#" class="list-content-play"></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="onread">
+                                                <td class="list-content-name">
+                                                    <a href="load/member-edit.html" rel="Поп" class="list-content-name-inner">
+                                                        <div class="list-content-avatar"><img src="files/avatar-4.jpg" alt="" width="34" height="34" /></div>
+                                                        <div class="list-content-name-content">
+                                                            <div class="list-content-name-text-1">Эдуард Лабковский</div>
+                                                            <div class="list-content-name-text-2">Россия, Новороссийск</div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="list-content-center">12.11.2014</td>
+                                                <td class="list-content-center">umkls@rambler.ru</td>
+                                                <td class="list-content-center">903 264 77 51</td>
+                                                <td class="list-content-center">
+                                                    <a href="#" class="list-content-status"></a>
+                                                    <a href="#" class="list-content-play"></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="list-content-name">
+                                                    <a href="load/member-edit.html" rel="Поп" class="list-content-name-inner">
+                                                        <div class="list-content-avatar"><img src="images/list-content-avatar-1.png" alt="" width="34" height="34" /></div>
+                                                        <div class="list-content-name-content">
+                                                            <div class="list-content-name-text-1">Эдуард Лабковский</div>
+                                                            <div class="list-content-name-text-2">Россия, Новороссийск</div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="list-content-center">17.11.2014</td>
+                                                <td class="list-content-center">umkls@rambler.ru</td>
+                                                <td class="list-content-center">903 264 77 51</td>
+                                                <td class="list-content-center">
+                                                    <a href="#" class="list-content-status"></a>
+                                                    <a href="#" class="list-content-play"></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="list-content-name">
+                                                    <a href="load/member-edit-2.html" rel="Хард-Рок" class="list-content-name-inner">
+                                                        <div class="list-content-avatar"><img src="files/avatar-1.jpg" alt="" width="34" height="34" /></div>
+                                                        <div class="list-content-name-content">
+                                                            <div class="list-content-name-text-1">Развесёлая новгородская кадриль</div>
+                                                            <div class="list-content-name-text-2">Россия, Москва</div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="list-content-center">15.11.2014</td>
+                                                <td class="list-content-center">diazdinov@mail.ru</td>
+                                                <td class="list-content-center">89163356811</td>
+                                                <td class="list-content-center">
+                                                    <a href="#" class="list-content-status"></a>
+                                                    <a href="#" class="list-content-play"></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="onread">
+                                                <td class="list-content-name">
+                                                    <a href="load/member-edit.html" rel="Поп" class="list-content-name-inner">
+                                                        <div class="list-content-avatar"><img src="files/avatar-2.jpg" alt="" width="34" height="34" /></div>
+                                                        <div class="list-content-name-content">
+                                                            <div class="list-content-name-text-1">Эдуард Лабковский</div>
+                                                            <div class="list-content-name-text-2">Россия, Новороссийск</div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="list-content-center">14.11.2014</td>
+                                                <td class="list-content-center">umkls@rambler.ru</td>
+                                                <td class="list-content-center">903 264 77 51</td>
+                                                <td class="list-content-center">
+                                                    <a href="#" class="list-content-status"></a>
+                                                    <a href="#" class="list-content-play"></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="onread">
+                                                <td class="list-content-name">
+                                                    <a href="load/member-edit-3.html" rel="Хард-Рок" class="list-content-name-inner">
+                                                        <div class="list-content-avatar"><img src="files/avatar-3.jpg" alt="" width="34" height="34" /></div>
+                                                        <div class="list-content-name-content">
+                                                            <div class="list-content-name-text-1">Кукушечка</div>
+                                                            <div class="list-content-name-text-2">Россия, Москва</div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="list-content-center">13.11.2014</td>
+                                                <td class="list-content-center">diazdinov@mail.ru</td>
+                                                <td class="list-content-center">89163356811</td>
+                                                <td class="list-content-center">
+                                                    <a href="#" class="list-content-status"></a>
+                                                    <a href="#" class="list-content-play"></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="onread">
+                                                <td class="list-content-name">
+                                                    <a href="load/member-edit.html" rel="Поп" class="list-content-name-inner">
+                                                        <div class="list-content-avatar"><img src="files/avatar-4.jpg" alt="" width="34" height="34" /></div>
+                                                        <div class="list-content-name-content">
+                                                            <div class="list-content-name-text-1">Эдуард Лабковский</div>
+                                                            <div class="list-content-name-text-2">Россия, Новороссийск</div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="list-content-center">12.11.2014</td>
+                                                <td class="list-content-center">umkls@rambler.ru</td>
+                                                <td class="list-content-center">903 264 77 51</td>
+                                                <td class="list-content-center">
+                                                    <a href="#" class="list-content-status"></a>
+                                                    <a href="#" class="list-content-play"></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="onread">
+                                                <td class="list-content-name">
+                                                    <a href="load/member-edit.html" rel="Поп" class="list-content-name-inner">
+                                                        <div class="list-content-avatar"><img src="images/list-content-avatar-3.png" alt="" width="34" height="34" /></div>
+                                                        <div class="list-content-name-content">
+                                                            <div class="list-content-name-text-1">Эдуард Лабковский</div>
+                                                            <div class="list-content-name-text-2">Россия, Новороссийск</div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="list-content-center">17.11.2014</td>
+                                                <td class="list-content-center">umkls@rambler.ru</td>
+                                                <td class="list-content-center">903 264 77 51</td>
+                                                <td class="list-content-center">
+                                                    <a href="#" class="list-content-status"></a>
+                                                    <a href="#" class="list-content-play"></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="list-content-name">
+                                                    <a href="load/member-edit-2.html" rel="Хард-Рок" class="list-content-name-inner">
+                                                        <div class="list-content-avatar"><img src="files/avatar-1.jpg" alt="" width="34" height="34" /></div>
+                                                        <div class="list-content-name-content">
+                                                            <div class="list-content-name-text-1">Развесёлая новгородская кадриль</div>
+                                                            <div class="list-content-name-text-2">Россия, Москва</div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="list-content-center">15.11.2014</td>
+                                                <td class="list-content-center">diazdinov@mail.ru</td>
+                                                <td class="list-content-center">89163356811</td>
+                                                <td class="list-content-center">
+                                                    <a href="#" class="list-content-status"></a>
+                                                    <a href="#" class="list-content-play"></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="onread">
+                                                <td class="list-content-name">
+                                                    <a href="load/member-edit.html" rel="Поп" class="list-content-name-inner">
+                                                        <div class="list-content-avatar"><img src="files/avatar-2.jpg" alt="" width="34" height="34" /></div>
+                                                        <div class="list-content-name-content">
+                                                            <div class="list-content-name-text-1">Эдуард Лабковский</div>
+                                                            <div class="list-content-name-text-2">Россия, Новороссийск</div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="list-content-center">14.11.2014</td>
+                                                <td class="list-content-center">umkls@rambler.ru</td>
+                                                <td class="list-content-center">903 264 77 51</td>
+                                                <td class="list-content-center">
+                                                    <a href="#" class="list-content-status"></a>
+                                                    <a href="#" class="list-content-play"></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="unread">
+                                                <td class="list-content-name">
+                                                    <a href="load/member-edit-3.html" rel="Хард-Рок" class="list-content-name-inner">
+                                                        <div class="list-content-avatar"><img src="files/avatar-3.jpg" alt="" width="34" height="34" /></div>
+                                                        <div class="list-content-name-content">
+                                                            <div class="list-content-name-text-1">Кукушечка</div>
+                                                            <div class="list-content-name-text-2">Россия, Москва</div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="list-content-center">13.11.2014</td>
+                                                <td class="list-content-center">diazdinov@mail.ru</td>
+                                                <td class="list-content-center">89163356811</td>
+                                                <td class="list-content-center">
+                                                    <a href="#" class="list-content-status"></a>
+                                                    <a href="#" class="list-content-play"></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="onread">
+                                                <td class="list-content-name">
+                                                    <a href="load/member-edit.html" rel="Поп" class="list-content-name-inner">
+                                                        <div class="list-content-avatar"><img src="files/avatar-4.jpg" alt="" width="34" height="34" /></div>
+                                                        <div class="list-content-name-content">
+                                                            <div class="list-content-name-text-1">Эдуард Лабковский</div>
+                                                            <div class="list-content-name-text-2">Россия, Новороссийск</div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="list-content-center">12.11.2014</td>
+                                                <td class="list-content-center">umkls@rambler.ru</td>
+                                                <td class="list-content-center">903 264 77 51</td>
+                                                <td class="list-content-center">
+                                                    <a href="#" class="list-content-status"></a>
+                                                    <a href="#" class="list-content-play"></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- list END -->
+
+                    </div>
+                </div>
+                <!-- container END -->
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <footer>
+            <div class="footer-inner">
+
+                <div class="footer-copyrights">
+                    <p>© 2014, <a href="#">НАШИМ ГЕРОЯМ</a></p>
+                    <p>Музыкальный конкурс к 70-летию Великой Победы</p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="#">Карта сайта</a> &nbsp;/&nbsp;
+                    <a href="#">Правила использования материалов</a>
+                </div>
+
+            </div>
+        </footer>
+
+    </body>
+</html>

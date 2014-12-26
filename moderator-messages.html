@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Нашим героям</title>
+
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin,cyrillic" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/jquery.jscrollpane.css" />
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" href="css/styles-ie8.css" />
+        <![endif]-->
+
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/jquery.mousewheel.js"></script>
+        <script src="js/jquery.jscrollpane.min.js"></script>
+        <script src="js/tools.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <!-- side -->
+                <div class="side">
+                    <ul>
+                        <li>
+                            <a href="#" class="side-avatar"><img src="files/side-avatar.jpg" alt="" width="64" height="64" /></a>
+                        </li>
+                        <li>
+                            <a href="#" class="side-item">
+                                <div class="side-item-icon"><img src="images/side-item-1.png" alt="" width="25" height="33" /><div>25</div></div>
+                                <div class="side-item-name">Заявки</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="side-item">
+                                <div class="side-item-icon"><img src="images/side-item-2.png" alt="" width="28" height="32" /></div>
+                                <div class="side-item-name">Участники</div>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#" class="side-item">
+                                <div class="side-item-icon"><img src="images/side-item-3.png" alt="" width="31" height="21" /><div>150</div></div>
+                                <div class="side-item-name">Сообщения</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="side-item">
+                                <div class="side-item-icon"><img src="images/side-item-4.png" alt="" width="25" height="33" /><div>3</div></div>
+                                <div class="side-item-name">ЗАявки на&nbsp;изменениe профиля</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- side END -->
+
+                <!-- container -->
+                <div class="container">
+                    <div class="content">
+
+                        <header>
+                            <div class="header-title">Сообщения</div>
+
+                            <div class="search">
+                                <form action="#" method="post">
+                                    <div class="search-input"><span>поиск</span><input type="text" name="search" value="" /></div>
+                                    <div class="search-submit"><input type="submit" value="" /></div>
+                                </form>
+                            </div>
+
+                            <div class="header-filter">
+                                <ul>
+                                    <li class="active"><a href="#">Все</a></li>
+                                    <li><a href="#">Новые</a></li>
+                                </ul>
+                            </div>
+                        </header>
+
+                        <!-- list -->
+                        <div class="list">
+                            <div class="list-headers">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="list-content-message-header">Сообщение</th>
+                                            <th class="center">Дата</th>
+                                            <th>Отправитель</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+
+                            <div class="list-content">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="list-content-message"><a href="#">Надо сказать, что VIP-мероприятие масштабирует формат события. Размещение, не меняя концепции, изложенной выше, ускоряет экспериментальный нестандартный подход, повышая конкуренцию. Принцип восприятия, как следует из вышесказанного,</a></td>
+                                            <td class="list-content-message-date">17.11.2014<br />12:20</td>
+                                            <td class="list-content-name-2">
+                                                <a href="#" class="list-content-name-inner">
+                                                    <div class="list-content-avatar"><img src="images/list-content-avatar-1.png" alt="" width="34" height="34" /></div>
+                                                    <div class="list-content-name-content">
+                                                        <div class="list-content-name-text-1">Эдуард Лабковский</div>
+                                                        <div class="list-content-name-text-2">Россия, Новороссийск</div>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="unread">
+                                            <td class="list-content-message"><a href="#">Установка отражает гендерный код, как и предсказывают практические аспекты использования принципов гештальпсихологии в области восприятия, обучения, развития психики...<br />социальных взаимоотношений</a></td>
+                                            <td class="list-content-message-date">17.11.2014<br />12:20</td>
+                                            <td class="list-content-name-2">
+                                                <a href="#" class="list-content-name-inner">
+                                                    <div class="list-content-avatar"><img src="images/list-content-avatar-2.png" alt="" width="34" height="34" /></div>
+                                                    <div class="list-content-name-content">
+                                                        <div class="list-content-name-text-1">Эдуард Лабковский</div>
+                                                        <div class="list-content-name-text-2">Россия, Новороссийск</div>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="onread">
+                                            <td class="list-content-message"><a href="#">Построение бренда индуктивно позиционирует продвигаемый conversion rate. Целевой сегмент рынка</a></td>
+                                            <td class="list-content-message-date">17.11.2014<br />12:20</td>
+                                            <td class="list-content-name-2">
+                                                <a href="#" class="list-content-name-inner">
+                                                    <div class="list-content-avatar"><img src="files/avatar-1.jpg" alt="" width="34" height="34" /></div>
+                                                    <div class="list-content-name-content">
+                                                        <div class="list-content-name-text-1">Евгений Беньяминов</div>
+                                                        <div class="list-content-name-text-2">Россия, Москва</div>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="onread">
+                                            <td class="list-content-message"><a href="#">Чувство устойчиво вызывает материалистический автоматизм, что лишний раз подтверждает правоту З.Фрейда. Показательный пример – перцепция отталкивает архетип, независимо... психического состояния пациента</a></td>
+                                            <td class="list-content-message-date">17.11.2014<br />12:20</td>
+                                            <td class="list-content-name-2">
+                                                <a href="#" class="list-content-name-inner">
+                                                    <div class="list-content-avatar"><img src="files/avatar-2.jpg" alt="" width="34" height="34" /></div>
+                                                    <div class="list-content-name-content">
+                                                        <div class="list-content-name-text-1">ЛАла сонг</div>
+                                                        <div class="list-content-name-text-2">Россия, Новороссийск</div>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="onread">
+                                            <td class="list-content-message"><a href="#">По их почти единодушному мнению, гомеостаз выбирает психоанализ</a></td>
+                                            <td class="list-content-message-date">17.11.2014<br />12:20</td>
+                                            <td class="list-content-name-2">
+                                                <a href="#" class="list-content-name-inner">
+                                                    <div class="list-content-avatar"><img src="files/avatar-5.jpg" alt="" width="34" height="34" /></div>
+                                                    <div class="list-content-name-content">
+                                                        <div class="list-content-name-text-1">Серьезные ребята</div>
+                                                        <div class="list-content-name-text-2">Россия, Москва</div>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="onread">
+                                            <td class="list-content-message"><a href="#">Рейт-карта по-прежнему востребована. Воздействие на потребителя, как следует из вышесказанного, специфицирует типичный PR. Департамент маркетинга и продаж определяет анализ зарубежного опыта, отвоевывая свою долю рынка.</a></td>
+                                            <td class="list-content-message-date">17.11.2014<br />12:20</td>
+                                            <td class="list-content-name-2">
+                                                <a href="#" class="list-content-name-inner">
+                                                    <div class="list-content-avatar"><img src="files/avatar-4.jpg" alt="" width="34" height="34" /></div>
+                                                    <div class="list-content-name-content">
+                                                        <div class="list-content-name-text-1">Эдуард Лабковский</div>
+                                                        <div class="list-content-name-text-2">Россия, Новороссийск</div>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="list-content-message"><a href="#">Надо сказать, что VIP-мероприятие масштабирует формат события. Размещение, не меняя концепции, изложенной выше, ускоряет экспериментальный нестандартный подход, повышая конкуренцию. Принцип восприятия, как следует из вышесказанного,</a></td>
+                                            <td class="list-content-message-date">17.11.2014<br />12:20</td>
+                                            <td class="list-content-name-2">
+                                                <a href="#" class="list-content-name-inner">
+                                                    <div class="list-content-avatar"><img src="images/list-content-avatar-1.png" alt="" width="34" height="34" /></div>
+                                                    <div class="list-content-name-content">
+                                                        <div class="list-content-name-text-1">Эдуард Лабковский</div>
+                                                        <div class="list-content-name-text-2">Россия, Новороссийск</div>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="unread">
+                                            <td class="list-content-message"><a href="#">Установка отражает гендерный код, как и предсказывают практические аспекты использования принципов гештальпсихологии в области восприятия, обучения, развития психики...<br />социальных взаимоотношений</a></td>
+                                            <td class="list-content-message-date">17.11.2014<br />12:20</td>
+                                            <td class="list-content-name-2">
+                                                <a href="#" class="list-content-name-inner">
+                                                    <div class="list-content-avatar"><img src="images/list-content-avatar-2.png" alt="" width="34" height="34" /></div>
+                                                    <div class="list-content-name-content">
+                                                        <div class="list-content-name-text-1">Эдуард Лабковский</div>
+                                                        <div class="list-content-name-text-2">Россия, Новороссийск</div>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="onread">
+                                            <td class="list-content-message"><a href="#">Построение бренда индуктивно позиционирует продвигаемый conversion rate. Целевой сегмент рынка</a></td>
+                                            <td class="list-content-message-date">17.11.2014<br />12:20</td>
+                                            <td class="list-content-name-2">
+                                                <a href="#" class="list-content-name-inner">
+                                                    <div class="list-content-avatar"><img src="files/avatar-1.jpg" alt="" width="34" height="34" /></div>
+                                                    <div class="list-content-name-content">
+                                                        <div class="list-content-name-text-1">Евгений Беньяминов</div>
+                                                        <div class="list-content-name-text-2">Россия, Москва</div>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="onread">
+                                            <td class="list-content-message"><a href="#">Чувство устойчиво вызывает материалистический автоматизм, что лишний раз подтверждает правоту З.Фрейда. Показательный пример – перцепция отталкивает архетип, независимо... психического состояния пациента</a></td>
+                                            <td class="list-content-message-date">17.11.2014<br />12:20</td>
+                                            <td class="list-content-name-2">
+                                                <a href="#" class="list-content-name-inner">
+                                                    <div class="list-content-avatar"><img src="files/avatar-2.jpg" alt="" width="34" height="34" /></div>
+                                                    <div class="list-content-name-content">
+                                                        <div class="list-content-name-text-1">ЛАла сонг</div>
+                                                        <div class="list-content-name-text-2">Россия, Новороссийск</div>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- list END -->
+
+                        <div class="pager">
+                            <span>1</span>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <small>...</small>
+                            <a href="#">18</a>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- container END -->
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <footer>
+            <div class="footer-inner">
+
+                <div class="footer-copyrights">
+                    <p>© 2014, <a href="#">НАШИМ ГЕРОЯМ</a></p>
+                    <p>Музыкальный конкурс к 70-летию Великой Победы</p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="#">Карта сайта</a> &nbsp;/&nbsp;
+                    <a href="#">Правила использования материалов</a>
+                </div>
+
+            </div>
+        </footer>
+
+    </body>
+</html>

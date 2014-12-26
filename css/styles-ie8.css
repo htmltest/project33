@@ -1,0 +1,8 @@
+.side-avatar img,
+.side-item-icon,
+.side-item-icon div,
+.list-title a,
+.list-content-avatar img,
+.pager a {behavior:url(./js/PIE.htc)}
+
+.loading-bg {filter:alpha(opacity=70)}
