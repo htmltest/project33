@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Нашим героям</title>
+
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,700&subset=latin,cyrillic" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/jquery.jscrollpane.css" />
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" href="css/styles-ie8.css" />
+        <![endif]-->
+
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/jquery.mousewheel.js"></script>
+        <script src="js/jquery.jscrollpane.min.js"></script>
+        <script src="js/jquery.fileupload/js/vendor/jquery.ui.widget.js"></script>
+        <script src="js/jquery.fileupload/js/tmpl.min.js"></script>
+        <script src="js/jquery.fileupload/js/jquery.iframe-transport.js"></script>
+        <script src="js/jquery.fileupload/js/jquery.fileupload.js"></script>
+        <script src="js/jquery.fileupload/js/jquery.fileupload-process.js"></script>
+        <script src="js/jquery.fileupload/js/jquery.fileupload-validate.js"></script>
+        <script src="js/jquery.fileupload/js/jquery.fileupload-ui.js"></script>
+        <script src="js/tools.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <!-- side -->
+                <div class="side">
+                    <ul>
+                        <li class="active">
+                            <a href="#" class="side-avatar"><img src="files/side-avatar.jpg" alt="" width="64" height="64" /></a>
+                        </li>
+                        <li>
+                            <a href="#" class="side-item">
+                                <div class="side-item-icon"><img src="images/side-item-3.png" alt="" width="31" height="21" /><div>150</div></div>
+                                <div class="side-item-name">Сообщения</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- side END -->
+
+                <!-- container -->
+                <div class="container">
+                    <div class="content">
+
+                        <header>
+                            <div class="header-title">Профиль участника</div>
+                        </header>
+
+                        <!-- item wrap -->
+                        <div class="item-wrap">
+                            <form action="#" method="post">
+                                <!-- The template to display files available for upload -->
+                                <script id="template-upload" type="text/x-tmpl">
+                                    {% for (var i=0, file; file=o.files[i]; i++) { %}
+                                        <tr class="template-download fade">
+                                            <td><div class="files-item-name"><div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar" style="width:0"></div></div><span>{%=file.name%}</span></div></td>
+                                            <td>
+                                                {% if (!i) { %}
+                                                <button class="cancel files-item-stop"></button>
+                                                {% } %}
+                                                <div class="files-item-error-wrap">!<div class="files-item-error error"></div></div>
+                                            </td>
+                                        </tr>
+                                    {% } %}
+                                </script>
+
+                                <!-- The template to display files available for download -->
+                                <script id="template-download" type="text/x-tmpl">
+                                    {% for (var i=0, file; file=o.files[i]; i++) { %}
+                                        <tr class="template-download fade">
+                                            <td><div class="files-item-name"><span>{%=file.name%}</span></div></td>
+                                            <td>
+                                                {% if (file.deleteUrl) { %}
+                                                    <button class="delete files-item-del" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}></button>
+                                                {% } %}
+
+                                                {% if (file.error) { %}
+                                                    <div class="files-item-error-wrap">!<div class="files-item-error">— загрузка файла не удалась из-за <span>{%=file.error%}</span></div></div>
+                                                {% } %}
+                                            </td>
+                                        </tr>
+                                    {% } %}
+                                </script>
+
+                                <div class="item">
+                                    <div class="item-inner">
+                                        <div class="item-side">
+                                            <div class="item-photo"><img src="files/item-photo.jpg" alt="" width="220" height="220" /></div>
+
+                                            <div id="fileupload-foto">
+                                                <div class="files-list">
+                                                    <table role="presentation">
+                                                        <tbody class="files">
+                                                            <tr class="template-download fade in">
+                                                                <td><div class="files-item-name"><span>img2076.jpg</span></div></td>
+                                                                <td>
+                                                                    <button data-url="/js/jquery.fileupload/server/php/?file=img2076.jpg" data-type="DELETE" class="delete files-item-del"></button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="window-import-link">
+                                                    <div class="fileinput-button">
+                                                        <span>Загрузить еще</span>
+                                                        <input type="file" name="files[]" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item-container">
+                                            <div class="item-content">
+                                                <div class="item-header">
+                                                    <div class="item-input"><input type="text" name="name" value="Серьезные ребята" /></div>
+                                                </div>
+                                                <div class="item-approve item-approve-edit"><img src="images/approve.png" alt="" width="28" height="28" /> Анкета одобрена модератором</div>
+                                                <div class="item-info">
+                                                    <table>
+                                                        <tr>
+                                                            <td>Город</td>
+                                                            <td><div class="item-input"><input type="text" name="city" value="Россия, Новороссийск" /></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Регистрация</td>
+                                                            <td>17.11.2014</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Жанр</td>
+                                                            <td><div class="item-input"><input type="text" name="genre" value="Жанр инструментальной музыки" /></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Почта</td>
+                                                            <td><div class="item-input"><input type="text" name="email" value="umkls@rambler.ru" /></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Телефон</td>
+                                                            <td><div class="item-input"><input type="text" name="phone" value="903 264 77 51" /></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>О группе</td>
+                                                            <td><div class="item-input"><textarea name="about" rows="5" cols="10">Рекламная кампания неестественно обуславливает эмпирический имидж. Рекламная акция, суммируя приведенные примеры, порождена временем. Узнавание бренда как всегда непредсказуемо. Имиджевая реклама последовательно развивает нестандартный подход.</textarea></div></td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="profile-media">
+                                        <div class="profile-media-cols">
+                                            <div class="profile-media-col">
+                                                <div class="profile-media-title">Аудио</div>
+                                                <div class="item-jury-audio">
+                                                    <a href="#" class="item-jury-audio-play"></a>
+                                                    <div class="item-jury-audio-status">
+                                                        <div class="item-jury-audio-status-progress" style="width:50%"></div>
+                                                        <div class="item-jury-audio-status-title">03:23</div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-filelink" id="fileupload-audio">
+                                                    <div class="files-list">
+                                                        <table role="presentation">
+                                                            <tbody class="files">
+                                                                <tr class="template-download fade in">
+                                                                    <td><div class="files-item-name"><span>Подвиг героев.mp3</span></div></td>
+                                                                    <td>
+                                                                        <button data-url="/js/jquery.fileupload/server/php/?file=podvig.mp3" data-type="DELETE" class="delete files-item-del"></button>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="form-filelink-top">
+                                                        <div class="form-filelink-top-file">
+                                                            <div class="window-import-link">
+                                                                <div class="fileinput-button">
+                                                                    <span>Загрузить файл</span>
+                                                                    <input type="file" name="files[]" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-filelink-top-or">/</div>
+                                                        <div class="item-input"><input type="text" name="url1" value="http://" /></div>
+                                                        <div class="item-input-link"><span>Вставить ссылку</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="profile-media-col">
+                                                <div class="profile-media-title">Видео</div>
+                                                <div class="profile-media-video"><iframe width="340" height="191" src="//www.youtube.com/embed/TEz1u4xHHsQ" frameborder="0" allowfullscreen></iframe></div>
+                                                <div class="form-filelink" id="fileupload-video">
+                                                    <div class="files-list">
+                                                        <table role="presentation">
+                                                            <tbody class="files">
+                                                                <tr class="template-download fade in">
+                                                                    <td><div class="files-item-name"><span>Клип на нашу лучшую песню.mp4</span></div></td>
+                                                                    <td>
+                                                                        <button data-url="/js/jquery.fileupload/server/php/?file=clip.mp4" data-type="DELETE" class="delete files-item-del"></button>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="form-filelink-top">
+                                                        <div class="form-filelink-top-file">
+                                                            <div class="window-import-link">
+                                                                <div class="fileinput-button">
+                                                                    <span>Загрузить файл</span>
+                                                                    <input type="file" name="files[]" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-filelink-top-or">/</div>
+                                                        <div class="item-input"><input type="text" name="url1" value="http://" /></div>
+                                                        <div class="item-input-link"><span>Вставить ссылку</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="profile-comment">
+                                        <div class="profile-comment-title">Причина</div>
+                                        <div class="item-input"><textarea name="about" rows="5" cols="10" placeholder="Укажите причину, которая побудила вас внести изменения"></textarea></div>
+                                        <div class="profile-comment-submit"><input type="submit" value="Отправить на утверждение" /></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- item wrap END -->
+
+                    </div>
+                </div>
+                <!-- container END -->
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <footer>
+            <div class="footer-inner">
+
+                <div class="footer-copyrights">
+                    <p>© 2014, <a href="#">НАШИМ ГЕРОЯМ</a></p>
+                    <p>Музыкальный конкурс к 70-летию Великой Победы</p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="#">Карта сайта</a> &nbsp;/&nbsp;
+                    <a href="#">Правила использования материалов</a>
+                </div>
+
+            </div>
+        </footer>
+
+    </body>
+</html>

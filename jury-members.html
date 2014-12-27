@@ -35,10 +35,10 @@
                         <li>
                             <a href="#" class="side-avatar"><img src="files/side-avatar.jpg" alt="" width="64" height="64" /></a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="#" class="side-item">
                                 <div class="side-item-icon"><img src="images/side-item-1.png" alt="" width="25" height="33" /><div>25</div></div>
-                                <div class="side-item-name">Заявки</div>
+                                <div class="side-item-name">Новые участники конкурса</div>
                             </a>
                         </li>
                         <li>
@@ -53,12 +53,6 @@
                                 <div class="side-item-name">Сообщения</div>
                             </a>
                         </li>
-                        <li class="active">
-                            <a href="#" class="side-item">
-                                <div class="side-item-icon"><img src="images/side-item-4.png" alt="" width="25" height="33" /><div>3</div></div>
-                                <div class="side-item-name">ЗАявки на&nbsp;изменениe профиля</div>
-                            </a>
-                        </li>
                     </ul>
                 </div>
                 <!-- side END -->
@@ -68,21 +62,7 @@
                     <div class="content">
 
                         <header>
-                            <div class="header-title">Заявки на изменение </div>
-
-                            <div class="search">
-                                <form action="#" method="post">
-                                    <div class="search-input"><span>поиск</span><input type="text" name="search" value="" /></div>
-                                    <div class="search-submit"><input type="submit" value="" /></div>
-                                </form>
-                            </div>
-
-                            <div class="header-filter">
-                                <ul>
-                                    <li class="active"><a href="#">Все</a></li>
-                                    <li><a href="#">Новые</a></li>
-                                </ul>
-                            </div>
+                            <div class="header-title">Новые Участники конкурса</div>
                         </header>
 
                         <!-- item wrap -->
@@ -122,22 +102,20 @@
                                     <thead>
                                         <tr>
                                             <th>Исполнитель, город</th>
-                                            <th class="center">Регистрация</th>
-                                            <th class="center">Электронная почта</th>
-                                            <th class="center">Телефон</th>
-                                            <th></th>
+                                            <th>Жанр</th>
+                                            <th class="center">Баллы</th>
                                         </tr>
                                     </thead>
                                 </table>
                             </div>
 
-                            <div class="list-content list-content-items">
+                            <div class="list-content list-content-items list-content-items-jury">
                                 <div class="list-content-inner">
                                     <table>
                                         <tbody>
-                                            <tr>
+                                            <tr class="onrate">
                                                 <td class="list-content-name">
-                                                    <a href="load/member-edit.html" rel="Поп" class="list-content-name-inner">
+                                                    <a href="load/jury-member.html" rel="Шансон" class="list-content-name-inner">
                                                         <div class="list-content-avatar"><img src="images/list-content-avatar-1.png" alt="" width="34" height="34" /></div>
                                                         <div class="list-content-name-content">
                                                             <div class="list-content-name-text-1">Эдуард Лабковский</div>
@@ -145,18 +123,21 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="list-content-center">17.11.2014</td>
-                                                <td class="list-content-center">umkls@rambler.ru</td>
-                                                <td class="list-content-center">903 264 77 51</td>
+                                                <td class="list-content-genre">Шансон</td>
                                                 <td class="list-content-center">
-                                                    <a href="#" class="list-content-status"></a>
-                                                    <a href="#" class="list-content-play"></a>
+                                                    <div class="list-content-rates">
+                                                        <div class="list-content-rate-music">62</div>
+                                                        <div class="list-content-rate-vocal">71</div>
+                                                        <div class="list-content-rate-unique">68</div>
+                                                        <div class="list-content-rate-atmosphere">75</div>
+                                                        <div class="list-content-rate-style">88</div>
+                                                    </div>
                                                 </td>
                                             </tr>
 
-                                            <tr>
+                                            <tr class="onrate">
                                                 <td class="list-content-name">
-                                                    <a href="load/member-edit-2.html" rel="Хард-Рок" class="list-content-name-inner">
+                                                    <a href="load/jury-member-2.html" rel="Поп" class="list-content-name-inner">
                                                         <div class="list-content-avatar"><img src="files/avatar-1.jpg" alt="" width="34" height="34" /></div>
                                                         <div class="list-content-name-content">
                                                             <div class="list-content-name-text-1">Развесёлая новгородская кадриль</div>
@@ -164,18 +145,21 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="list-content-center">15.11.2014</td>
-                                                <td class="list-content-center">diazdinov@mail.ru</td>
-                                                <td class="list-content-center">89163356811</td>
+                                                <td class="list-content-genre">Поп</td>
                                                 <td class="list-content-center">
-                                                    <a href="#" class="list-content-status"></a>
-                                                    <a href="#" class="list-content-play"></a>
+                                                    <div class="list-content-rates">
+                                                        <div class="list-content-rate-music">25</div>
+                                                        <div class="list-content-rate-vocal">31</div>
+                                                        <div class="list-content-rate-unique">52</div>
+                                                        <div class="list-content-rate-atmosphere">22</div>
+                                                        <div class="list-content-rate-style">34</div>
+                                                    </div>
                                                 </td>
                                             </tr>
 
-                                            <tr class="onread">
+                                            <tr class="onrate">
                                                 <td class="list-content-name">
-                                                    <a href="load/member-edit.html" rel="Поп" class="list-content-name-inner">
+                                                    <a href="load/jury-member.html" rel="Жанр инструментальной музыки" class="list-content-name-inner">
                                                         <div class="list-content-avatar"><img src="files/avatar-2.jpg" alt="" width="34" height="34" /></div>
                                                         <div class="list-content-name-content">
                                                             <div class="list-content-name-text-1">Эдуард Лабковский</div>
@@ -183,18 +167,21 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="list-content-center">14.11.2014</td>
-                                                <td class="list-content-center">umkls@rambler.ru</td>
-                                                <td class="list-content-center">903 264 77 51</td>
+                                                <td class="list-content-genre">Жанр инструментальной музыки</td>
                                                 <td class="list-content-center">
-                                                    <a href="#" class="list-content-status"></a>
-                                                    <a href="#" class="list-content-play"></a>
+                                                    <div class="list-content-rates">
+                                                        <div class="list-content-rate-music">50</div>
+                                                        <div class="list-content-rate-vocal">99</div>
+                                                        <div class="list-content-rate-unique">85</div>
+                                                        <div class="list-content-rate-atmosphere">72</div>
+                                                        <div class="list-content-rate-style">95</div>
+                                                    </div>
                                                 </td>
                                             </tr>
 
                                             <tr class="onread">
                                                 <td class="list-content-name">
-                                                    <a href="load/member-edit-3.html" rel="Хард-Рок" class="list-content-name-inner">
+                                                    <a href="load/jury-member-3.html" rel="Шансон" class="list-content-name-inner">
                                                         <div class="list-content-avatar"><img src="files/avatar-3.jpg" alt="" width="34" height="34" /></div>
                                                         <div class="list-content-name-content">
                                                             <div class="list-content-name-text-1">Кукушечка</div>
@@ -202,18 +189,21 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="list-content-center">13.11.2014</td>
-                                                <td class="list-content-center">diazdinov@mail.ru</td>
-                                                <td class="list-content-center">89163356811</td>
+                                                <td class="list-content-genre">Шансон</td>
                                                 <td class="list-content-center">
-                                                    <a href="#" class="list-content-status"></a>
-                                                    <a href="#" class="list-content-play"></a>
+                                                    <div class="list-content-rates">
+                                                        <div class="list-content-rate-music">100</div>
+                                                        <div class="list-content-rate-vocal">25</div>
+                                                        <div class="list-content-rate-unique">0</div>
+                                                        <div class="list-content-rate-atmosphere">95</div>
+                                                        <div class="list-content-rate-style">0</div>
+                                                    </div>
                                                 </td>
                                             </tr>
 
                                             <tr class="onread">
                                                 <td class="list-content-name">
-                                                    <a href="load/member-edit.html" rel="Поп" class="list-content-name-inner">
+                                                    <a href="load/jury-member.html" rel="Поп" class="list-content-name-inner">
                                                         <div class="list-content-avatar"><img src="files/avatar-4.jpg" alt="" width="34" height="34" /></div>
                                                         <div class="list-content-name-content">
                                                             <div class="list-content-name-text-1">Эдуард Лабковский</div>
@@ -221,18 +211,21 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="list-content-center">12.11.2014</td>
-                                                <td class="list-content-center">umkls@rambler.ru</td>
-                                                <td class="list-content-center">903 264 77 51</td>
+                                                <td class="list-content-genre">Поп</td>
                                                 <td class="list-content-center">
-                                                    <a href="#" class="list-content-status"></a>
-                                                    <a href="#" class="list-content-play"></a>
+                                                    <div class="list-content-rates list-content-rates-null">
+                                                        <div class="list-content-rate-music">0</div>
+                                                        <div class="list-content-rate-vocal">0</div>
+                                                        <div class="list-content-rate-unique">0</div>
+                                                        <div class="list-content-rate-atmosphere">0</div>
+                                                        <div class="list-content-rate-style">0</div>
+                                                    </div>
                                                 </td>
                                             </tr>
 
-                                            <tr class="onread">
+                                            <tr class="onrate">
                                                 <td class="list-content-name">
-                                                    <a href="load/member-edit.html" rel="Поп" class="list-content-name-inner">
+                                                    <a href="load/jury-member.html" rel="Шансон" class="list-content-name-inner">
                                                         <div class="list-content-avatar"><img src="images/list-content-avatar-3.png" alt="" width="34" height="34" /></div>
                                                         <div class="list-content-name-content">
                                                             <div class="list-content-name-text-1">Эдуард Лабковский</div>
@@ -240,18 +233,21 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="list-content-center">17.11.2014</td>
-                                                <td class="list-content-center">umkls@rambler.ru</td>
-                                                <td class="list-content-center">903 264 77 51</td>
+                                                <td class="list-content-genre">Шансон</td>
                                                 <td class="list-content-center">
-                                                    <a href="#" class="list-content-status"></a>
-                                                    <a href="#" class="list-content-play"></a>
+                                                    <div class="list-content-rates">
+                                                        <div class="list-content-rate-music">25</div>
+                                                        <div class="list-content-rate-vocal">31</div>
+                                                        <div class="list-content-rate-unique">52</div>
+                                                        <div class="list-content-rate-atmosphere">22</div>
+                                                        <div class="list-content-rate-style">34</div>
+                                                    </div>
                                                 </td>
                                             </tr>
 
-                                            <tr>
+                                            <tr class="onrate">
                                                 <td class="list-content-name">
-                                                    <a href="load/member-edit-2.html" rel="Хард-Рок" class="list-content-name-inner">
+                                                    <a href="load/jury-member-2.html" rel="Поп" class="list-content-name-inner">
                                                         <div class="list-content-avatar"><img src="files/avatar-1.jpg" alt="" width="34" height="34" /></div>
                                                         <div class="list-content-name-content">
                                                             <div class="list-content-name-text-1">Развесёлая новгородская кадриль</div>
@@ -259,18 +255,21 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="list-content-center">15.11.2014</td>
-                                                <td class="list-content-center">diazdinov@mail.ru</td>
-                                                <td class="list-content-center">89163356811</td>
+                                                <td class="list-content-genre">Поп</td>
                                                 <td class="list-content-center">
-                                                    <a href="#" class="list-content-status"></a>
-                                                    <a href="#" class="list-content-play"></a>
+                                                    <div class="list-content-rates">
+                                                        <div class="list-content-rate-music">50</div>
+                                                        <div class="list-content-rate-vocal">99</div>
+                                                        <div class="list-content-rate-unique">85</div>
+                                                        <div class="list-content-rate-atmosphere">72</div>
+                                                        <div class="list-content-rate-style">95</div>
+                                                    </div>
                                                 </td>
                                             </tr>
 
-                                            <tr class="onread">
+                                            <tr class="onrate">
                                                 <td class="list-content-name">
-                                                    <a href="load/member-edit.html" rel="Поп" class="list-content-name-inner">
+                                                    <a href="load/jury-member.html" rel="Жанр инструментальной музыки" class="list-content-name-inner">
                                                         <div class="list-content-avatar"><img src="files/avatar-2.jpg" alt="" width="34" height="34" /></div>
                                                         <div class="list-content-name-content">
                                                             <div class="list-content-name-text-1">Эдуард Лабковский</div>
@@ -278,18 +277,21 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="list-content-center">14.11.2014</td>
-                                                <td class="list-content-center">umkls@rambler.ru</td>
-                                                <td class="list-content-center">903 264 77 51</td>
+                                                <td class="list-content-genre">Жанр инструментальной музыки</td>
                                                 <td class="list-content-center">
-                                                    <a href="#" class="list-content-status"></a>
-                                                    <a href="#" class="list-content-play"></a>
+                                                    <div class="list-content-rates">
+                                                        <div class="list-content-rate-music">100</div>
+                                                        <div class="list-content-rate-vocal">25</div>
+                                                        <div class="list-content-rate-unique">0</div>
+                                                        <div class="list-content-rate-atmosphere">95</div>
+                                                        <div class="list-content-rate-style">0</div>
+                                                    </div>
                                                 </td>
                                             </tr>
 
-                                            <tr class="unread">
+                                            <tr class="onread">
                                                 <td class="list-content-name">
-                                                    <a href="load/member-edit-3.html" rel="Хард-Рок" class="list-content-name-inner">
+                                                    <a href="load/jury-member-3.html" rel="Шансон" class="list-content-name-inner">
                                                         <div class="list-content-avatar"><img src="files/avatar-3.jpg" alt="" width="34" height="34" /></div>
                                                         <div class="list-content-name-content">
                                                             <div class="list-content-name-text-1">Кукушечка</div>
@@ -297,18 +299,21 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="list-content-center">13.11.2014</td>
-                                                <td class="list-content-center">diazdinov@mail.ru</td>
-                                                <td class="list-content-center">89163356811</td>
+                                                <td class="list-content-genre">Шансон</td>
                                                 <td class="list-content-center">
-                                                    <a href="#" class="list-content-status"></a>
-                                                    <a href="#" class="list-content-play"></a>
+                                                    <div class="list-content-rates list-content-rates-null">
+                                                        <div class="list-content-rate-music">0</div>
+                                                        <div class="list-content-rate-vocal">0</div>
+                                                        <div class="list-content-rate-unique">0</div>
+                                                        <div class="list-content-rate-atmosphere">0</div>
+                                                        <div class="list-content-rate-style">0</div>
+                                                    </div>
                                                 </td>
                                             </tr>
 
                                             <tr class="onread">
                                                 <td class="list-content-name">
-                                                    <a href="load/member-edit.html" rel="Поп" class="list-content-name-inner">
+                                                    <a href="load/jury-member.html" rel="Поп" class="list-content-name-inner">
                                                         <div class="list-content-avatar"><img src="files/avatar-4.jpg" alt="" width="34" height="34" /></div>
                                                         <div class="list-content-name-content">
                                                             <div class="list-content-name-text-1">Эдуард Лабковский</div>
@@ -316,18 +321,21 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="list-content-center">12.11.2014</td>
-                                                <td class="list-content-center">umkls@rambler.ru</td>
-                                                <td class="list-content-center">903 264 77 51</td>
+                                                <td class="list-content-genre">Поп</td>
                                                 <td class="list-content-center">
-                                                    <a href="#" class="list-content-status"></a>
-                                                    <a href="#" class="list-content-play"></a>
+                                                    <div class="list-content-rates list-content-rates-null">
+                                                        <div class="list-content-rate-music">0</div>
+                                                        <div class="list-content-rate-vocal">0</div>
+                                                        <div class="list-content-rate-unique">0</div>
+                                                        <div class="list-content-rate-atmosphere">0</div>
+                                                        <div class="list-content-rate-style">0</div>
+                                                    </div>
                                                 </td>
                                             </tr>
 
-                                            <tr>
+                                            <tr class="onrate">
                                                 <td class="list-content-name">
-                                                    <a href="load/member-edit.html" rel="Поп" class="list-content-name-inner">
+                                                    <a href="load/jury-member.html" rel="Шансон" class="list-content-name-inner">
                                                         <div class="list-content-avatar"><img src="images/list-content-avatar-1.png" alt="" width="34" height="34" /></div>
                                                         <div class="list-content-name-content">
                                                             <div class="list-content-name-text-1">Эдуард Лабковский</div>
@@ -335,18 +343,21 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="list-content-center">17.11.2014</td>
-                                                <td class="list-content-center">umkls@rambler.ru</td>
-                                                <td class="list-content-center">903 264 77 51</td>
+                                                <td class="list-content-genre">Шансон</td>
                                                 <td class="list-content-center">
-                                                    <a href="#" class="list-content-status"></a>
-                                                    <a href="#" class="list-content-play"></a>
+                                                    <div class="list-content-rates">
+                                                        <div class="list-content-rate-music">62</div>
+                                                        <div class="list-content-rate-vocal">71</div>
+                                                        <div class="list-content-rate-unique">68</div>
+                                                        <div class="list-content-rate-atmosphere">75</div>
+                                                        <div class="list-content-rate-style">88</div>
+                                                    </div>
                                                 </td>
                                             </tr>
 
-                                            <tr>
+                                            <tr class="onrate">
                                                 <td class="list-content-name">
-                                                    <a href="load/member-edit-2.html" rel="Хард-Рок" class="list-content-name-inner">
+                                                    <a href="load/jury-member-2.html" rel="Поп" class="list-content-name-inner">
                                                         <div class="list-content-avatar"><img src="files/avatar-1.jpg" alt="" width="34" height="34" /></div>
                                                         <div class="list-content-name-content">
                                                             <div class="list-content-name-text-1">Развесёлая новгородская кадриль</div>
@@ -354,18 +365,21 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="list-content-center">15.11.2014</td>
-                                                <td class="list-content-center">diazdinov@mail.ru</td>
-                                                <td class="list-content-center">89163356811</td>
+                                                <td class="list-content-genre">Поп</td>
                                                 <td class="list-content-center">
-                                                    <a href="#" class="list-content-status"></a>
-                                                    <a href="#" class="list-content-play"></a>
+                                                    <div class="list-content-rates">
+                                                        <div class="list-content-rate-music">25</div>
+                                                        <div class="list-content-rate-vocal">31</div>
+                                                        <div class="list-content-rate-unique">52</div>
+                                                        <div class="list-content-rate-atmosphere">22</div>
+                                                        <div class="list-content-rate-style">34</div>
+                                                    </div>
                                                 </td>
                                             </tr>
 
-                                            <tr class="onread">
+                                            <tr class="onrate">
                                                 <td class="list-content-name">
-                                                    <a href="load/member-edit.html" rel="Поп" class="list-content-name-inner">
+                                                    <a href="load/jury-member.html" rel="Жанр инструментальной музыки" class="list-content-name-inner">
                                                         <div class="list-content-avatar"><img src="files/avatar-2.jpg" alt="" width="34" height="34" /></div>
                                                         <div class="list-content-name-content">
                                                             <div class="list-content-name-text-1">Эдуард Лабковский</div>
@@ -373,18 +387,21 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="list-content-center">14.11.2014</td>
-                                                <td class="list-content-center">umkls@rambler.ru</td>
-                                                <td class="list-content-center">903 264 77 51</td>
+                                                <td class="list-content-genre">Жанр инструментальной музыки</td>
                                                 <td class="list-content-center">
-                                                    <a href="#" class="list-content-status"></a>
-                                                    <a href="#" class="list-content-play"></a>
+                                                    <div class="list-content-rates">
+                                                        <div class="list-content-rate-music">50</div>
+                                                        <div class="list-content-rate-vocal">99</div>
+                                                        <div class="list-content-rate-unique">85</div>
+                                                        <div class="list-content-rate-atmosphere">72</div>
+                                                        <div class="list-content-rate-style">95</div>
+                                                    </div>
                                                 </td>
                                             </tr>
 
                                             <tr class="onread">
                                                 <td class="list-content-name">
-                                                    <a href="load/member-edit-3.html" rel="Хард-Рок" class="list-content-name-inner">
+                                                    <a href="load/jury-member-3.html" rel="Шансон" class="list-content-name-inner">
                                                         <div class="list-content-avatar"><img src="files/avatar-3.jpg" alt="" width="34" height="34" /></div>
                                                         <div class="list-content-name-content">
                                                             <div class="list-content-name-text-1">Кукушечка</div>
@@ -392,18 +409,21 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="list-content-center">13.11.2014</td>
-                                                <td class="list-content-center">diazdinov@mail.ru</td>
-                                                <td class="list-content-center">89163356811</td>
+                                                <td class="list-content-genre">Шансон</td>
                                                 <td class="list-content-center">
-                                                    <a href="#" class="list-content-status"></a>
-                                                    <a href="#" class="list-content-play"></a>
+                                                    <div class="list-content-rates">
+                                                        <div class="list-content-rate-music">100</div>
+                                                        <div class="list-content-rate-vocal">25</div>
+                                                        <div class="list-content-rate-unique">0</div>
+                                                        <div class="list-content-rate-atmosphere">95</div>
+                                                        <div class="list-content-rate-style">0</div>
+                                                    </div>
                                                 </td>
                                             </tr>
 
                                             <tr class="onread">
                                                 <td class="list-content-name">
-                                                    <a href="load/member-edit.html" rel="Поп" class="list-content-name-inner">
+                                                    <a href="load/jury-member.html" rel="Поп" class="list-content-name-inner">
                                                         <div class="list-content-avatar"><img src="files/avatar-4.jpg" alt="" width="34" height="34" /></div>
                                                         <div class="list-content-name-content">
                                                             <div class="list-content-name-text-1">Эдуард Лабковский</div>
@@ -411,18 +431,21 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="list-content-center">12.11.2014</td>
-                                                <td class="list-content-center">umkls@rambler.ru</td>
-                                                <td class="list-content-center">903 264 77 51</td>
+                                                <td class="list-content-genre">Поп</td>
                                                 <td class="list-content-center">
-                                                    <a href="#" class="list-content-status"></a>
-                                                    <a href="#" class="list-content-play"></a>
+                                                    <div class="list-content-rates list-content-rates-null">
+                                                        <div class="list-content-rate-music">0</div>
+                                                        <div class="list-content-rate-vocal">0</div>
+                                                        <div class="list-content-rate-unique">0</div>
+                                                        <div class="list-content-rate-atmosphere">0</div>
+                                                        <div class="list-content-rate-style">0</div>
+                                                    </div>
                                                 </td>
                                             </tr>
 
-                                            <tr class="onread">
+                                            <tr class="onrate">
                                                 <td class="list-content-name">
-                                                    <a href="load/member-edit.html" rel="Поп" class="list-content-name-inner">
+                                                    <a href="load/jury-member.html" rel="Шансон" class="list-content-name-inner">
                                                         <div class="list-content-avatar"><img src="images/list-content-avatar-3.png" alt="" width="34" height="34" /></div>
                                                         <div class="list-content-name-content">
                                                             <div class="list-content-name-text-1">Эдуард Лабковский</div>
@@ -430,18 +453,21 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="list-content-center">17.11.2014</td>
-                                                <td class="list-content-center">umkls@rambler.ru</td>
-                                                <td class="list-content-center">903 264 77 51</td>
+                                                <td class="list-content-genre">Шансон</td>
                                                 <td class="list-content-center">
-                                                    <a href="#" class="list-content-status"></a>
-                                                    <a href="#" class="list-content-play"></a>
+                                                    <div class="list-content-rates">
+                                                        <div class="list-content-rate-music">25</div>
+                                                        <div class="list-content-rate-vocal">31</div>
+                                                        <div class="list-content-rate-unique">52</div>
+                                                        <div class="list-content-rate-atmosphere">22</div>
+                                                        <div class="list-content-rate-style">34</div>
+                                                    </div>
                                                 </td>
                                             </tr>
 
-                                            <tr>
+                                            <tr class="onrate">
                                                 <td class="list-content-name">
-                                                    <a href="load/member-edit-2.html" rel="Хард-Рок" class="list-content-name-inner">
+                                                    <a href="load/jury-member-2.html" rel="Поп" class="list-content-name-inner">
                                                         <div class="list-content-avatar"><img src="files/avatar-1.jpg" alt="" width="34" height="34" /></div>
                                                         <div class="list-content-name-content">
                                                             <div class="list-content-name-text-1">Развесёлая новгородская кадриль</div>
@@ -449,18 +475,21 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="list-content-center">15.11.2014</td>
-                                                <td class="list-content-center">diazdinov@mail.ru</td>
-                                                <td class="list-content-center">89163356811</td>
+                                                <td class="list-content-genre">Поп</td>
                                                 <td class="list-content-center">
-                                                    <a href="#" class="list-content-status"></a>
-                                                    <a href="#" class="list-content-play"></a>
+                                                    <div class="list-content-rates">
+                                                        <div class="list-content-rate-music">50</div>
+                                                        <div class="list-content-rate-vocal">99</div>
+                                                        <div class="list-content-rate-unique">85</div>
+                                                        <div class="list-content-rate-atmosphere">72</div>
+                                                        <div class="list-content-rate-style">95</div>
+                                                    </div>
                                                 </td>
                                             </tr>
 
-                                            <tr class="onread">
+                                            <tr class="onrate">
                                                 <td class="list-content-name">
-                                                    <a href="load/member-edit.html" rel="Поп" class="list-content-name-inner">
+                                                    <a href="load/jury-member.html" rel="Жанр инструментальной музыки" class="list-content-name-inner">
                                                         <div class="list-content-avatar"><img src="files/avatar-2.jpg" alt="" width="34" height="34" /></div>
                                                         <div class="list-content-name-content">
                                                             <div class="list-content-name-text-1">Эдуард Лабковский</div>
@@ -468,18 +497,21 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="list-content-center">14.11.2014</td>
-                                                <td class="list-content-center">umkls@rambler.ru</td>
-                                                <td class="list-content-center">903 264 77 51</td>
+                                                <td class="list-content-genre">Жанр инструментальной музыки</td>
                                                 <td class="list-content-center">
-                                                    <a href="#" class="list-content-status"></a>
-                                                    <a href="#" class="list-content-play"></a>
+                                                    <div class="list-content-rates">
+                                                        <div class="list-content-rate-music">100</div>
+                                                        <div class="list-content-rate-vocal">25</div>
+                                                        <div class="list-content-rate-unique">0</div>
+                                                        <div class="list-content-rate-atmosphere">95</div>
+                                                        <div class="list-content-rate-style">0</div>
+                                                    </div>
                                                 </td>
                                             </tr>
 
-                                            <tr class="unread">
+                                            <tr class="onread">
                                                 <td class="list-content-name">
-                                                    <a href="load/member-edit-3.html" rel="Хард-Рок" class="list-content-name-inner">
+                                                    <a href="load/jury-member-3.html" rel="Шансон" class="list-content-name-inner">
                                                         <div class="list-content-avatar"><img src="files/avatar-3.jpg" alt="" width="34" height="34" /></div>
                                                         <div class="list-content-name-content">
                                                             <div class="list-content-name-text-1">Кукушечка</div>
@@ -487,18 +519,21 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="list-content-center">13.11.2014</td>
-                                                <td class="list-content-center">diazdinov@mail.ru</td>
-                                                <td class="list-content-center">89163356811</td>
+                                                <td class="list-content-genre">Шансон</td>
                                                 <td class="list-content-center">
-                                                    <a href="#" class="list-content-status"></a>
-                                                    <a href="#" class="list-content-play"></a>
+                                                    <div class="list-content-rates list-content-rates-null">
+                                                        <div class="list-content-rate-music">0</div>
+                                                        <div class="list-content-rate-vocal">0</div>
+                                                        <div class="list-content-rate-unique">0</div>
+                                                        <div class="list-content-rate-atmosphere">0</div>
+                                                        <div class="list-content-rate-style">0</div>
+                                                    </div>
                                                 </td>
                                             </tr>
 
                                             <tr class="onread">
                                                 <td class="list-content-name">
-                                                    <a href="load/member-edit.html" rel="Поп" class="list-content-name-inner">
+                                                    <a href="load/jury-member.html" rel="Поп" class="list-content-name-inner">
                                                         <div class="list-content-avatar"><img src="files/avatar-4.jpg" alt="" width="34" height="34" /></div>
                                                         <div class="list-content-name-content">
                                                             <div class="list-content-name-text-1">Эдуард Лабковский</div>
@@ -506,12 +541,15 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="list-content-center">12.11.2014</td>
-                                                <td class="list-content-center">umkls@rambler.ru</td>
-                                                <td class="list-content-center">903 264 77 51</td>
+                                                <td class="list-content-genre">Поп</td>
                                                 <td class="list-content-center">
-                                                    <a href="#" class="list-content-status"></a>
-                                                    <a href="#" class="list-content-play"></a>
+                                                    <div class="list-content-rates list-content-rates-null">
+                                                        <div class="list-content-rate-music">0</div>
+                                                        <div class="list-content-rate-vocal">0</div>
+                                                        <div class="list-content-rate-unique">0</div>
+                                                        <div class="list-content-rate-atmosphere">0</div>
+                                                        <div class="list-content-rate-style">0</div>
+                                                    </div>
                                                 </td>
                                             </tr>
                                         </tbody>

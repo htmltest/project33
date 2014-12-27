@@ -3,6 +3,14 @@
 .side-item-icon div,
 .list-title a,
 .list-content-avatar img,
-.pager a {behavior:url(./js/PIE.htc)}
+.pager a,
+.list-content-rates div,
+.item-rate-list-one-value,
+.messages-list-avatar img,
+.messages-item-avatar img {behavior:url(./js/PIE.htc)}
 
 .loading-bg {filter:alpha(opacity=70)}
+
+.list-content-rates-null {filter:alpha(opacity=40)}
+
+.item-approve-edit {filter:alpha(opacity=25)}
